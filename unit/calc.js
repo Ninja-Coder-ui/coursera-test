@@ -1,4 +1,4 @@
-function document.getElementById() {
+functiondocument.getElementById(); {
     var elements = new Array();
     for (var i = 0; i < arguments.length; i++) {
         var element = arguments[i];

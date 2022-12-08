@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title></title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="calc.css" rel="stylesheet" />
     <link href="calc.js" rel="Java script" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="outer">
-        <div class="ac b">Unit Converter</div>
-        <div id="cover">
-            <form name="uc">
-                <table class="main">
-                    <tr>
-                        <td>Unit Type</td>
-                        <td>
-                            <select id="ut" onchange="selunit();">
+      <div class="ac b">Unit Converter</div>
+      <div id="cover">
+        <form name="uc">
+          <table class="main">
+            <tr>
+              <td>Unit Type</td>
+              <td>
+                <select id="ut" onchange="selunit();">
                   <option value="1">Length</option>
                   <option value="2">Area</option>
                   <option value="3">Speed</option>
                   <option value="4">Weight</option>
                   <option value="5">Volume</option>
                   <option value="6">Temperature</option>
-                          </select>
-                        </td>
-                    </tr>
-                </table>
+                </select>
+              </td>
+            </tr>
+          </table>
 
-                <div id="t1">
-                    <table class="main">
-                        <tr>
-                            <td>No. of units</td>
-                            <td>
-                                <input id="lip" value="1" onchange="len();" />
-                                <tr>
-                                    <td>Convert from</td>
-                                    <td>
-                                        <select id="flength" onchange="len();">
+          <div id="t1">
+            <table class="main">
+              <tr>
+                <td>No. of units</td>
+                <td>
+                  <input id="lip" value="1" onchange="len();" />
+                  <tr>
+                    <td>Convert from</td>
+                    <td>
+                      <select id="flength" onchange="len();">
                         <option value="1">Millimeters</option>
                         <option value="10">Centimeters</option>
                         <option value="1000" selected>Meters</option>
@@ -52,10 +51,10 @@
                         <option value="1701.8">Smoots</option>
                       </select>
 
-                                        <tr>
-                                            <td>Convert to</td>
-                                            <td>
-                                                <select id="tlength" onchange="len();">
+                      <tr>
+                        <td>Convert to</td>
+                        <td>
+                          <select id="tlength" onchange="len();">
                             <option value="1">Millimeters</option>
                             <option value="10">Centimeters</option>
                             <option value="1000">Meters</option>
@@ -68,29 +67,29 @@
                             <option value="1701.8">Smoots</option>
                           </select>
 
-                                                <tr>
-                                                    <td colspan="2">
-                                                        <input class="output" id="lop" />
-                                                    </td>
-                                                </tr>
-                                            </td>
-                                        </tr>
-                                    </td>
-                                </tr>
+                          <tr>
+                            <td colspan="2">
+                              <input class="output" id="lop" />
                             </td>
-                        </tr>
-                    </table>
-                </div>
-                <div id="t2">
-                    <table class="main">
-                        <tr>
-                            <td>No. of units</td>
-                            <td>
-                                <input id="aip" value="1" onchange="area();" />
-                                <tr>
-                                    <td>Convert from</td>
-                                    <td>
-                                        <select id="farea" onchange="area();">
+                          </tr>
+                        </td>
+                      </tr>
+                    </td>
+                  </tr>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div id="t2">
+            <table class="main">
+              <tr>
+                <td>No. of units</td>
+                <td>
+                  <input id="aip" value="1" onchange="area();" />
+                  <tr>
+                    <td>Convert from</td>
+                    <td>
+                      <select id="farea" onchange="area();">
                         <option value=".01">Sq. Millimeter</option>
                         <option value="1">Sq. Centimeters</option>
                         <option value="10000" selected>Sq. Meters</option>
@@ -103,10 +102,10 @@
                         <option value="40468564">Acres</option>
                       </select>
 
-                                        <tr>
-                                            <td>Convert to</td>
-                                            <td>
-                                                <select id="tarea" onchange="area();">
+                      <tr>
+                        <td>Convert to</td>
+                        <td>
+                          <select id="tarea" onchange="area();">
                             <option value=".01">Sq. Millimeter</option>
                             <option value="1">Sq. Centimeters</option>
                             <option value="10000">Sq. Meters</option>
@@ -121,29 +120,29 @@
                             <option value="40468564">Acres</option>
                           </select>
 
-                                                <tr>
-                                                    <td colspan="2">
-                                                        <input class="output" id="aop" />
-                                                    </td>
-                                                </tr>
-                                            </td>
-                                        </tr>
-                                    </td>
-                                </tr>
+                          <tr>
+                            <td colspan="2">
+                              <input class="output" id="aop" />
                             </td>
-                        </tr>
-                    </table>
-                </div>
-                <div id="t3">
-                    <table class="main">
-                        <tr>
-                            <td>No. of units</td>
-                            <td>
-                                <input id="sip" value="1" onchange="speed();" />
-                                <tr>
-                                    <td>Convert from</td>
-                                    <td>
-                                        <select id="fspeed" onchange="speed();">
+                          </tr>
+                        </td>
+                      </tr>
+                    </td>
+                  </tr>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div id="t3">
+            <table class="main">
+              <tr>
+                <td>No. of units</td>
+                <td>
+                  <input id="sip" value="1" onchange="speed();" />
+                  <tr>
+                    <td>Convert from</td>
+                    <td>
+                      <select id="fspeed" onchange="speed();">
                         <option value="0.1">Millimeters /Sec</option>
                         <option value="1">Centimeters /Sec</option>
                         <option value="100">Meters /Sec</option>
@@ -159,10 +158,10 @@
                         <option value="51.4443">Knots</option>
                       </select>
 
-                                        <tr>
-                                            <td>Convert to</td>
-                                            <td>
-                                                <select id="tspeed" onchange="speed();">
+                      <tr>
+                        <td>Convert to</td>
+                        <td>
+                          <select id="tspeed" onchange="speed();">
                             <option value="0.1">Millimeters /Sec</option>
                             <option value="1">Centimeters /Sec</option>
                             <option value="100" selected>Meters /Sec</option>
@@ -176,29 +175,29 @@
                             <option value="51.4443">Knots</option>
                           </select>
 
-                                                <tr>
-                                                    <td colspan="2">
-                                                        <input class="output" id="sop" />
-                                                    </td>
-                                                </tr>
-                                            </td>
-                                        </tr>
-                                    </td>
-                                </tr>
+                          <tr>
+                            <td colspan="2">
+                              <input class="output" id="sop" />
                             </td>
-                        </tr>
-                    </table>
-                </div>
-                <div id="t4">
-                    <table class="main">
-                        <tr>
-                            <td>No. of units</td>
-                            <td>
-                                <input id="wip" value="1" onchange="weight();" />
-                                <tr>
-                                    <td>Convert from</td>
-                                    <td>
-                                        <select id="fweight" onchange="weight();">
+                          </tr>
+                        </td>
+                      </tr>
+                    </td>
+                  </tr>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div id="t4">
+            <table class="main">
+              <tr>
+                <td>No. of units</td>
+                <td>
+                  <input id="wip" value="1" onchange="weight();" />
+                  <tr>
+                    <td>Convert from</td>
+                    <td>
+                      <select id="fweight" onchange="weight();">
                         <option value="1">Grams</option>
                         <option value="1000" selected>Kilograms</option>
                         <option value="100000">Quintals</option>
@@ -210,10 +209,10 @@
                         <option value="1016047">Long Tons (UK)</option>
                       </select>
 
-                                        <tr>
-                                            <td>Convert to</td>
-                                            <td>
-                                                <select id="tweight" onchange="weight();">
+                      <tr>
+                        <td>Convert to</td>
+                        <td>
+                          <select id="tweight" onchange="weight();">
                             <option value="1">Grams</option>
                             <option value="1000">Kilograms</option>
                             <option value="100000">Quintals</option>
@@ -225,29 +224,29 @@
                             <option value="1016047">Long Tons (UK)</option>
                           </select>
 
-                                                <tr>
-                                                    <td colspan="2">
-                                                        <input class="output" id="wop" />
-                                                    </td>
-                                                </tr>
-                                            </td>
-                                        </tr>
-                                    </td>
-                                </tr>
+                          <tr>
+                            <td colspan="2">
+                              <input class="output" id="wop" />
                             </td>
-                        </tr>
-                    </table>
-                </div>
-                <div id="t5">
-                    <table class="main">
-                        <tr>
-                            <td>No. of units</td>
-                            <td>
-                                <input id="vip" value="1" onchange="vol();" />
-                                <tr>
-                                    <td>Convert from</td>
-                                    <td>
-                                        <select id="fvol" onchange="vol();">
+                          </tr>
+                        </td>
+                      </tr>
+                    </td>
+                  </tr>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div id="t5">
+            <table class="main">
+              <tr>
+                <td>No. of units</td>
+                <td>
+                  <input id="vip" value="1" onchange="vol();" />
+                  <tr>
+                    <td>Convert from</td>
+                    <td>
+                      <select id="fvol" onchange="vol();">
                         <option value="0.001">Millilter</option>
                         <option value="1000" selected>Litres</option>
                         <option value="1000000">Cubic Meters</option>
@@ -262,10 +261,10 @@
                         <option value="4.92892">Teaspoons</option>
                       </select>
 
-                                        <tr>
-                                            <td>Convert to</td>
-                                            <td>
-                                                <select id="tvol" onchange="vol();">
+                      <tr>
+                        <td>Convert to</td>
+                        <td>
+                          <select id="tvol" onchange="vol();">
                             <option value="0.001">Millilter</option>
                             <option value="1000">Litres</option>
                             <option value="1000000">Cubic Meters</option>
@@ -282,59 +281,59 @@
                             <option value="4.92892">Teaspoons</option>
                           </select>
 
-                                                <tr>
-                                                    <td colspan="2">
-                                                        <input class="output" id="vop" />
-                                                    </td>
-                                                </tr>
-                                            </td>
-                                        </tr>
-                                    </td>
-                                </tr>
+                          <tr>
+                            <td colspan="2">
+                              <input class="output" id="vop" />
                             </td>
-                        </tr>
-                    </table>
-                </div>
-                <div id="t6">
-                    <table class="main">
-                        <tr>
-                            <td>Temperature</td>
-                            <td>
-                                <input id="tip" value="1" onchange="temp();" />
-                                <tr>
-                                    <td>Convert from</td>
-                                    <td>
-                                        <select id="ftemp" onchange="temp();">
+                          </tr>
+                        </td>
+                      </tr>
+                    </td>
+                  </tr>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div id="t6">
+            <table class="main">
+              <tr>
+                <td>Temperature</td>
+                <td>
+                  <input id="tip" value="1" onchange="temp();" />
+                  <tr>
+                    <td>Convert from</td>
+                    <td>
+                      <select id="ftemp" onchange="temp();">
                         <option value="1" selected>Deg. Celcius</option>
                         <option value="2">Deg. Fahrenhite</option>
                         <option value="3">Kelvin</option>
                       </select>
 
-                                        <tr>
-                                            <td>Convert to</td>
-                                            <td>
-                                                <select id="ttemp" onchange="temp();">
+                      <tr>
+                        <td>Convert to</td>
+                        <td>
+                          <select id="ttemp" onchange="temp();">
                             <option value="1">Deg. Celcius</option>
                             <option value="2" selected>Deg. Fahrenhite</option>
                             <option value="3">Kelvin</option>
                           </select>
 
-                                                <tr>
-                                                    < <td colspan="2">
-                                                        <input class="output" id="top1" />
-                                            </td>
-                                            </tr>
-                                    </td>
-                                    </tr>
+                          <tr>
+                            <
+                            <td colspan="2">
+                              <input class="output" id="top1" />
                             </td>
-                            </tr>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </form>
-        </div>
+                          </tr>
+                        </td>
+                      </tr>
+                    </td>
+                  </tr>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </form>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>

@@ -1,23 +1,37 @@
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(222, 225, 228);
-    border: #272626;
-    border-width: 2px;
-}
-
-.flex-container>div {
-    background-color: #f1f1f1;
-    width: 330px;
-    margin: 10px;
-    padding: 10px;
-    height: 200px;
-}
-
-.chicken {
-    text-align: center;
-}
-
-.menu {
-    text-align: center;
-}
+ .flex-container {
+     display: flex;
+     flex-wrap: wrap;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ 
+ .flex-container>div {
+     background-color: #f1f1f1;
+     width: 350px;
+     margin: 10px;
+     font-size: 13px;
+     padding: 10px;
+     height: fit-content;
+ }
+ 
+ .div1 {
+     border: 10px rgb(190, 159, 155);
+ }
+ 
+ .menu {
+     text-align: center;
+ }
+ 
+ .dischicken {
+     background-color: rgb(198, 145, 153);
+     float: right;
+ }
+ 
+ .Beef {
+     background-color: rgb(159, 184, 119);
+     float: right;
+ }
+ 
+ .Shushi {
+     background-color: rgb(214, 214, 108);
+     float: right;
+ }

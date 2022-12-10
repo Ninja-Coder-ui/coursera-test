@@ -10,6 +10,7 @@
         background-color: rgb(169, 172, 165);
         align-content: center;
         text-align: right;
+        width: 30%;
     }
     
     .dischicken {
@@ -24,7 +25,7 @@
         background-color: rgb(169, 172, 165);
         align-content: center;
         text-align: right;
-        border-width: 15cm;
+        width: 60%;
     }
     
     .disbeef {
@@ -44,6 +45,7 @@
         background-color: rgb(169, 172, 165);
         align-content: center;
         text-align: right;
+        width: 90%;
     }
     
     .dissushi {

@@ -1,0 +1,55 @@
+    .container {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    .menu {
+        text-align: center;
+    }
+    
+    .chicken {
+        background-color: rgb(169, 172, 165);
+        align-content: center;
+        text-align: right;
+    }
+    
+    .dischicken {
+        background-color: rgb(210, 172, 178);
+    }
+    
+    .script-chicken {
+        text-align: left;
+    }
+    
+    .beef {
+        background-color: rgb(169, 172, 165);
+        align-content: center;
+        text-align: right;
+        border-width: 15cm;
+    }
+    
+    .disbeef {
+        background-color: rgb(211, 86, 105);
+        -webkit-text-fill-color: aliceblue;
+        margin-left: 4cm;
+        border: 4cm;
+        border-color: black;
+        border-width: 6cm;
+    }
+    
+    .script-beef {
+        text-align: left;
+    }
+    
+    .sushi {
+        background-color: rgb(169, 172, 165);
+        align-content: center;
+        text-align: right;
+    }
+    
+    .dissushi {
+        background-color: rgb(223, 230, 141);
+    }
+    
+    .script-sushi {
+        text-align: left;
+    }

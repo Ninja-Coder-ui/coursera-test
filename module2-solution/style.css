@@ -1,37 +1,38 @@
- .flex-container {
-     display: flex;
-     flex-wrap: wrap;
-     font-family: Verdana, Geneva, Tahoma, sans-serif;
- }
- 
- .flex-container>div {
-     background-color: #f1f1f1;
-     width: 350px;
-     margin: 10px;
-     font-size: 13px;
-     padding: 10px;
-     height: fit-content;
- }
- 
- .div1 {
-     border: 10px rgb(190, 159, 155);
- }
- 
- .menu {
-     text-align: center;
- }
- 
- .dischicken {
-     background-color: rgb(198, 145, 153);
-     float: right;
- }
- 
- .Beef {
-     background-color: rgb(159, 184, 119);
-     float: right;
- }
- 
- .Shushi {
-     background-color: rgb(214, 214, 108);
-     float: right;
- }
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-container>div {
+    background-color: #f1f1f1;
+    width: 350px;
+    margin: 10px;
+    text-align: center;
+    font-size: 13px;
+    padding: 10px;
+}
+
+.div1 {
+    border-style: solid;
+    border-width: medium;
+}
+
+.menu {
+    text-align: center;
+}
+
+.dischicken {
+    background-color: pink;
+    float: right;
+}
+
+.Beef {
+    background-color: rgb(94, 206, 198);
+    float: right;
+    text-decoration-color: azure;
+}
+
+.Shushi {
+    background-color: rgb(194, 187, 49);
+    float: right;
+}

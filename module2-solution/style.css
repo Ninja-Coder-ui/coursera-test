@@ -7,8 +7,8 @@
     background-color: #f1f1f1;
     width: 350px;
     margin: 10px;
-    text-align: center;
-    font-size: 13px;
+    text-align: left;
+    font-size: 15px;
     padding: 10px;
 }
 
@@ -24,15 +24,18 @@
 .dischicken {
     background-color: pink;
     float: right;
+    font-weight: bold;
 }
 
 .Beef {
     background-color: rgb(94, 206, 198);
     float: right;
     text-decoration-color: azure;
+    font-weight: bold;
 }
 
 .Shushi {
     background-color: rgb(194, 187, 49);
     float: right;
+    font-weight: bold;
 }

@@ -1,57 +1,23 @@
-    .container {
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
-    
-    .menu {
-        text-align: center;
-    }
-    
-    .chicken {
-        background-color: rgb(169, 172, 165);
-        align-content: center;
-        text-align: right;
-        width: 30%;
-    }
-    
-    .dischicken {
-        background-color: rgb(210, 172, 178);
-    }
-    
-    .script-chicken {
-        text-align: left;
-    }
-    
-    .beef {
-        background-color: rgb(169, 172, 165);
-        align-content: center;
-        text-align: right;
-        width: 60%;
-    }
-    
-    .disbeef {
-        background-color: rgb(211, 86, 105);
-        -webkit-text-fill-color: aliceblue;
-        margin-left: 4cm;
-        border: 4cm;
-        border-color: black;
-        border-width: 6cm;
-    }
-    
-    .script-beef {
-        text-align: left;
-    }
-    
-    .sushi {
-        background-color: rgb(169, 172, 165);
-        align-content: center;
-        text-align: right;
-        width: 90%;
-    }
-    
-    .dissushi {
-        background-color: rgb(223, 230, 141);
-    }
-    
-    .script-sushi {
-        text-align: left;
-    }
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(222, 225, 228);
+    border: #272626;
+    border-width: 2px;
+}
+
+.flex-container>div {
+    background-color: #f1f1f1;
+    width: 330px;
+    margin: 10px;
+    padding: 10px;
+    height: 200px;
+}
+
+.chicken {
+    text-align: center;
+}
+
+.menu {
+    text-align: center;
+}

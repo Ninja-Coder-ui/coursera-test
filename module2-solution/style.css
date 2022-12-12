@@ -1,41 +1,98 @@
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
+/********** Base styles **********/
+
+* {
+    box-sizing: border-box;
 }
 
-.flex-container>div {
-    background-color: #f1f1f1;
-    width: 350px;
-    margin: 10px;
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section {
+    background-color: grey;
+    border: 1px solid black;
+    margin-bottom: 30px;
+    height: 220px;
+}
+
+p {
+    width: 90%;
+    padding: 1px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: Helvetica;
+    color: black;
+    clear: right;
     text-align: left;
-    font-size: 15px;
-    padding: 10px;
 }
 
-.div1 {
-    border-style: solid;
-    border-width: medium;
-}
-
-.menu {
+h3 {
+    border: 1px solid black;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-top: 2px;
+    float: right;
+    height: 25px;
+    width: 80px;
     text-align: center;
 }
 
-.dischicken {
+#Chicken {
     background-color: pink;
-    float: right;
-    font-weight: bold;
 }
 
-.Beef {
-    background-color: rgb(94, 206, 198);
-    float: right;
-    text-decoration-color: azure;
-    font-weight: bold;
+#Beef {
+    background-color: red;
 }
 
-.Shushi {
-    background-color: rgb(194, 187, 49);
-    float: right;
-    font-weight: bold;
+#Sushi {
+    background-color: yellow;
+}
+
+
+/* Simple Responsive Framework. */
+
+.row {
+    width: 100%;
+}
+
+
+/********** Desktop only **********/
+
+@media (min-width: 992px) {
+    .col-desktop-A {
+        float: left;
+        margin-left: 2.5%;
+        width: 30%;
+    }
+}
+
+
+/********** Tablet only **********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-tablet-A {
+        float: left;
+        margin-left: 5%;
+        width: 42.5%;
+    }
+    .col-tablet-B {
+        float: left;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+    }
+}
+
+
+/********** Mobile only **********/
+
+@media (max-width: 767px) {
+    .col-mobile-A {
+        float: left;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
 }

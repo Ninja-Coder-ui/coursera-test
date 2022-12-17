@@ -6,10 +6,13 @@
 }
 
 .nav-bar {
-    background: #1d4052;
+    background: #6f8d7b;
     color: #fff;
     padding: 20px;
     font-family: sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .nav-bar img {
@@ -66,6 +69,10 @@ section {
     align-self: center;
 }
 
+.container {
+    margin-top: 120px;
+}
+
 p {
     width: 90%;
     padding: 1px;
@@ -108,7 +115,7 @@ h3 {
 }
 
 .food {
-    color: rgb(135, 103, 195);
+    color: rgb(86, 70, 62);
     font-weight: 800;
     font-size: large;
     margin-top: 0px;

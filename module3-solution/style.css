@@ -1,0 +1,161 @@
+/******navigation bar********/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar {
+    background: #1d4052;
+    color: #fff;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.nav-bar img {
+    height: 45px;
+    float: left;
+    margin-left: 20px;
+}
+
+.menu-right {
+    text-align: right;
+}
+
+ul li {
+    display: inline-block;
+    margin: 20px;
+    list-style: none;
+}
+
+span {
+    margin: 0 20px;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 800px) {
+    span {
+        display: block;
+    }
+    ul li {
+        display: block;
+    }
+    ul {
+        display: none;
+    }
+}
+
+
+/********** Base styles **********/
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section {
+    background-color: grey;
+    border: 1px solid black;
+    margin-bottom: 30px;
+    align-self: center;
+}
+
+p {
+    width: 90%;
+    padding: 1px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: Helvetica;
+    color: black;
+    clear: right;
+    cursor: pointer;
+}
+
+h3 {
+    border: 1px solid black;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-top: 2px;
+    float: right;
+    height: 25px;
+    width: 80px;
+    text-align: center;
+}
+
+#Chicken {
+    background-color: pink;
+}
+
+#Beef {
+    background-color: red;
+}
+
+#Sushi {
+    background-color: yellow;
+}
+
+
+/* Simple Responsive Framework. */
+
+.row {
+    width: 100%;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(89, 172, 208);
+}
+
+a:active {
+    color: rgb(63, 63, 204);
+}
+
+
+/********** Desktop only **********/
+
+@media (min-width: 992px) {
+    .col-desktop-A {
+        float: center;
+        margin-left: 2.5%;
+        width: 95%;
+    }
+}
+
+
+/********** Tablet only **********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-tablet-A {
+        float: left;
+        margin-left: 5%;
+        width: 89%;
+    }
+    .col-tablet-B {
+        float: left;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+    }
+}
+
+
+/********** Mobile only **********/
+
+@media (max-width: 767px) {
+    .col-mobile-A {
+        float: left;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+    }
+}

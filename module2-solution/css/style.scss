@@ -1,31 +1,61 @@
+$color_1: #fff;
+$color_2: black;
+$color_3: rgb(135, 103, 195);
+$color_4: aliceblue;
+$color_5: rgb(89, 172, 208);
+$color_6: rgb(63, 63, 204);
+$font-family_1: sans-serif;
+$font-family_2: Helvetica;
+$background-color_1: grey;
+$background-color_2: rgb(242, 177, 188);
+$background-color_3: red;
+$background-color_4: yellow;
+
 /******navigation bar********/
+
+
+/********** Base styles **********/
+
+
+/* Simple Responsive Framework. */
+
+
+/********** Desktop only **********/
+
+
+/********** Tablet only **********/
+
+
+/********** Mobile only **********/
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .nav-bar {
     background: #1d4052;
-    color: #fff;
+    color: $color_1;
     padding: 20px;
-    font-family: sans-serif;
-}
-
-.nav-bar img {
-    height: 45px;
-    float: left;
-    margin-left: 20px;
+    font-family: $font-family_1;
+    img {
+        height: 45px;
+        float: left;
+        margin-left: 20px;
+    }
 }
 
 .menu-right {
     text-align: right;
 }
 
-ul li {
-    display: inline-block;
-    margin: 20px;
-    list-style: none;
+ul {
+    li {
+        display: inline-block;
+        margin: 20px;
+        list-style: none;
+    }
 }
 
 span {
@@ -35,32 +65,13 @@ span {
     display: none;
 }
 
-@media (max-width: 800px) {
-    span {
-        display: block;
-    }
-    ul li {
-        display: block;
-    }
-    ul {
-        display: none;
-    }
-}
-
-
-/********** Base styles **********/
-
-* {
-    box-sizing: border-box;
-}
-
 h1 {
     text-align: center;
     margin-bottom: 30px;
 }
 
 section {
-    background-color: grey;
+    background-color: $background-color_1;
     border: 1px solid black;
     margin-bottom: 30px;
     align-self: center;
@@ -71,8 +82,8 @@ p {
     padding: 1px;
     margin-right: auto;
     margin-left: auto;
-    font-family: Helvetica;
-    color: black;
+    font-family: $font-family_2;
+    color: $color_2;
     clear: right;
     cursor: pointer;
 }
@@ -89,26 +100,23 @@ h3 {
 }
 
 #Chicken {
-    background-color: rgb(242, 177, 188);
+    background-color: $background-color_2;
 }
 
 #Beef {
-    background-color: red;
+    background-color: $background-color_3;
 }
 
 #Sushi {
-    background-color: yellow;
+    background-color: $background-color_4;
 }
-
-
-/* Simple Responsive Framework. */
 
 .row {
     width: 100%;
 }
 
 .food {
-    color: rgb(135, 103, 195);
+    color: $color_3;
     font-weight: 800;
     font-size: large;
     margin-top: 0px;
@@ -118,20 +126,27 @@ h3 {
 }
 
 a {
-    color: aliceblue;
+    color: $color_4;
     text-decoration: none;
+    &:hover {
+        color: $color_5;
+    }
+    &:active {
+        color: $color_6;
+    }
 }
 
-a:hover {
-    color: rgb(89, 172, 208);
+@media (max-width: 800px) {
+    span {
+        display: block;
+    }
+    ul {
+        li {
+            display: block;
+        }
+        display: none;
+    }
 }
-
-a:active {
-    color: rgb(63, 63, 204);
-}
-
-
-/********** Desktop only **********/
 
 @media (min-width: 992px) {
     .col-desktop-A {
@@ -140,9 +155,6 @@ a:active {
         width: 95%;
     }
 }
-
-
-/********** Tablet only **********/
 
 @media (min-width: 768px) and (max-width: 991px) {
     .col-tablet-A {
@@ -157,9 +169,6 @@ a:active {
         width: 90%;
     }
 }
-
-
-/********** Mobile only **********/
 
 @media (max-width: 767px) {
     .col-mobile-A {

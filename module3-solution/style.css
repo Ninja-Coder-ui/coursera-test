@@ -89,7 +89,7 @@ h3 {
 }
 
 #Chicken {
-    background-color: pink;
+    background-color: rgb(242, 177, 188);
 }
 
 #Beef {
@@ -105,6 +105,16 @@ h3 {
 
 .row {
     width: 100%;
+}
+
+.food {
+    color: rgb(135, 103, 195);
+    font-weight: 800;
+    font-size: large;
+    margin-top: 0px;
+    height: 5px;
+    width: auto;
+    padding: 0px 0px 0px 0px;
 }
 
 a {
